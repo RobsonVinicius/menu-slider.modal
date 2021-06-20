@@ -13,7 +13,13 @@
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
+  transition: transform 0.3s ease;
 }
+
+body.show-nav {
+  transform: translateX(250px)
+}
+
 
 nav {
   background-color: var(--primary-color);
@@ -22,7 +28,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 200px;
+  width: 250px;
   height: 100vh;
   z-index: 100;
   transform: translateX(-100%)
